@@ -1,0 +1,15 @@
+#sed
+
+It is a Stream editor
+from ed
+
+text ----> sed ---> output
+
+commands look like 
+
+'s/pattern/replacementpattern/p'
+
+
+s/9/100000000/p
+
+g/RegularExpressions(RE)/p
