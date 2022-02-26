@@ -1,0 +1,23 @@
+
+
+# AWK
+
+pattern {action}
+
+## Special patterns
+
+BEGIN - true on the first line
+END - true after the last line
+
+print "hello"
+
+var=0
+
+NR - Current row number
+
+
+-F - is the separator
+
+$1 $2 $3   .....$12 # current field
+$0 - variable with the whole line 
+
