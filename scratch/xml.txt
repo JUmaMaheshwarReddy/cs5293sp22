@@ -1,0 +1,31 @@
+
+
+<tag attributes="1">
+ <xml>
+  entry 1
+ </xml>
+ <xml>
+  entry 2
+ </xml>
+</tag>
+
+
+JSON
+
+[1,2,3,4] ---lists
+{"key": "value"} --- dictionaries
+{"list": {"items" : [1,2,3,4,5.0] }} --- both mix
+
+ usually called JSONL or JSONLINES
+
+
+YAML (yet another markup language)
+
+Meant to be more human readable
+
+- mystate: here
+  - list 1
+  - list 2
+
+
+
