@@ -1,0 +1,50 @@
+\w - word character
+\W - not word character(match any character that is not either lowercase,uppercase,digit or underscore sign)
+
+\b -boundary point(matches anything between \w and \W)
+\B -  matches anything that is not a boundary point
+
+
+\s - will match white space,newline,return tab or even a character return
+
+\S - opposite of white spaces
+
+example \t - white space \n-new line \r - character return
+
+^ 1234 -- tries to match at the beginning of the line
+1234$ --  tries to match at the end of the line
+
+* -- wildcard - zero or more characters
++ -- 1 or more characters
+
+a{5} -- pattern mucst have 'a' appears 5 times
+a{5,10} -- a appears between 5 and 10
+a{5,} -- minimum 5 times
+a{,10} -- max 10 times
+
+
+regexpressions 3 video
+
+- ipthyon3
+import re
+match.group() -- result is gonna be string that is macthed else none
+
+import passreg
+str = 'Okay cool. My password is 1234 dont tell anyone.'
+match = re.search(r'p\w*d is (\w+)\b',str)
+match.group()
+gives 'password is 1234'
+
+match.group(1)
+gives '1234'
+
+match.groups()
+('1234',)
+
+re.sub(pattern,replace)
+
+re.IGNORECASE will take currnt pattern make all case insensitive
+re.DOTALL -will allow new lines to also be matched
+re.MULTILINE - treats whole word as single line
+
+ 
